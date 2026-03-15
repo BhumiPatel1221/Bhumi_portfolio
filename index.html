@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Bhumi Patel | Portfolio, Full Stack Developer | Interested in UI/UX Design | Cloud Deployment Enthusiast. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <meta name="keywords"
+    content="bhumi patel,bhumi patel portfolio,Bhumi Patel Portfolio,bhumipatel,bhumi patel site,full stack developer,ui ux design,cloud deployment,bhumi patel github,bhumi patel web developer" />
+  <meta name="author" content="Bhumi Patel" />
+  <meta property="og:title" content="Bhumi Patel | Portfolio" />
+  <meta property="og:description"
+    content="Hi! My name is Bhumi. I'm a Full Stack Developer, Interested in UI/UX Design, and Cloud Deployment Enthusiast. I build modern, scalable, and user-friendly web applications." />
+  <meta property="og:site_name" content="Bhumi Patel Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bhumi Patel | Portfolio" />
+  <meta name="twitter:description"
+    content="Hi! My name is Bhumi. I'm a Full Stack Developer, Interested in UI/UX Design, and Cloud Deployment Enthusiast. I build modern, scalable, and user-friendly web applications." />
+  <title>Bhumi Patel | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <script>
+    // Initialize theme
+    if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.body.classList.add('light-mode');
+    }
+  </script>
+  <!-- ========== QUANTUM NEURAL NEXUS LOADER ========== -->
+  <div id="typing-loader">
+    <div class="nexus-container">
+      <!-- The Pulsing Core -->
+      <div class="nexus-core">
+        <div class="core-glow"></div>
+        <div class="core-symbol">&#60;/&#62;</div>
+      </div>
+
+      <!-- Multi-Axis Energy Rings -->
+      <div class="nexus-energy-rings">
+        <div class="energy-ring ring-x"></div>
+        <div class="energy-ring ring-y"></div>
+        <div class="energy-ring ring-z"></div>
+      </div>
+
+      <!-- Data Synapse Cloud -->
+      <div class="nexus-synapse-cloud">
+        <div class="synapse-node" style="--i:1; --d:2s"></div>
+        <div class="synapse-node" style="--i:2; --d:3s"></div>
+        <div class="synapse-node" style="--i:3; --d:1.5s"></div>
+        <div class="synapse-node" style="--i:4; --d:4s"></div>
+        <div class="synapse-node" style="--i:5; --d:2.5s"></div>
+        <div class="synapse-node" style="--i:6; --d:3.5s"></div>
+        <div class="synapse-node" style="--i:7; --d:1.8s"></div>
+        <div class="synapse-node" style="--i:8; --d:4.5s"></div>
+      </div>
+
+      <!-- Floating Technical Modality Labels -->
+      <div class="nexus-tech-tags">
+        <span class="nexus-tag" style="--i:0">SCALABILITY</span>
+        <span class="nexus-tag" style="--i:1">INNOVATION</span>
+        <span class="nexus-tag" style="--i:2">ARCHITECTURE</span>
+        <span class="nexus-tag" style="--i:3">AUTOMATION</span>
+        <span class="nexus-tag" style="--i:4">FULL-STACK</span>
+        <span class="nexus-tag" style="--i:5">OPTIMIZATION</span>
+        <span class="nexus-tag" style="--i:6">REAL-TIME</span>
+        <span class="nexus-tag" style="--i:7">DEVELOPMENT</span>
+      </div>
+    </div>
+
+    <!-- Right Side: Technical Presentation -->
+    <div class="loader-status welcome-text" id="welcome-text"></div>
+  </div>
+  <!-- ========== TECH ORBIT 3D LOADER END ========== -->
+
+  <!-- Unique Feature: Floating Resume Button -->
+  <div class="floating-resume-btn" onclick="openURL()" data-aos="fade-up">
+    <div class="resume-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+    </div>
+    <span class="resume-tooltip">Download Resume</span>
+  </div>
+  <!-- ========== TECH ORBIT 3D LOADER END ========== -->
+
+
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+    <!-- Unique Feature: Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+      <div id="scroll-progress-bar"></div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="bhumi patel logo">
+        <!-- <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar" />
+        </div> -->
+      </div>
+      <!-- Unique Feature: Live Activity Badge -->
+      <!-- <div class="live-status-badge" data-aos="fade-left">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for Hire</span>
+        <span class="status-location">| India 🇮🇳</span>
+      </div> -->
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+          <li class="certificates" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="#certificates" aria-label="certificates menu button">
+              &#60;/Certificates&#62;
+            </a>
+          </li>
+          <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="1100">
+            <a href="#experience" aria-label="experience menu button">
+              &#60;/Experience&#62;
+            </a>
+          </li>
+          <li class="contact" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="1300">
+            <a href="#contact" aria-label="contact menu button">
+              &#60;/Contact&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+        <li id="certificates-mobile-tab" class="mobile-navbar-tabs-li certificates" onclick="hidemenubyli()">
+          <a href="#certificates" tabindex="0" aria-label="certificates menu button">
+            &#60;/Certificates&#62;
+          </a>
+        </li>
+        <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+          <a href="#experience" tabindex="0" aria-label="experience menu button">
+            &#60;/Experience&#62;
+          </a>
+        </li>
+        <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact" onclick="hidemenubyli()">
+          <a href="#contact" tabindex="0" aria-label="contact menu button">
+            &#60;/Contact&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">o</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">B</p>
+          <p class="jello">h</p>
+          <p class="jello">u</p>
+          <p class="jello">m</p>
+          <p class="jello">i</p>
+          &nbsp;
+          <p class="jello">P</p>
+          <p class="jello">a</p>
+          <p class="jello">t</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">b</p>
+            <p class="jello">u</p>
+            <p class="jello">i</p>
+            <p class="jello">l</p>
+            <p class="jello">d</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+            <p class="jello">p</p>
+            <p class="jello">l</p>
+            <p class="jello">o</p>
+            <p class="jello">y</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Full Stack Developer | Interested in UI/UX Design | Cloud Deployment Enthusiast.<br />
+          <br />
+          I am a passionate Full Stack Developer who enjoys building modern, scalable, and user-friendly web
+          applications. I focus on creating clean UI, efficient backend systems, and deploying reliable cloud-based
+          solutions.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="#contact" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert invertapplied" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" checked />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Hi! My name is Bhumi. I'm a Full Stack Developer and Interested in UI/UX Design with a passion for
+              building modern,
+              scalable, and user-friendly web applications. My interest in web development started when I decided to
+              turn my ideas into real-world digital products.
+            </p>
+            <br />
+            <p tabindex="0">
+              I focus on creating clean UI, efficient backend systems, and deploying reliable cloud-based solutions. I
+              enjoy turning ideas into real-world digital products that solve meaningful problems.
+            </p>
+            <br />
+            <p tabindex="0">
+              My main focus these days is building interesting & creative web applications with modern technologies. I
+              like to code things,and enjoy bringing ideas to life in the browser and deploying them to
+              the cloud.
+            </p>
+            <!-- Education Details -->
+            <div class="about-education" data-aos="fade-left" data-aos-delay="400">
+              <h3 class="education-title">EDUCATION</h3>
+              <div class="education-info-box">
+                <p class="education-degree">Bachelor of Technology (B.TECH) in Computer Engineering</p>
+                <p class="education-year">2023 — 2027</p>
+                <div class="academic-institution">
+                  <p class="college-name">Devang Patel Institute of Advance Technology and Research (DEPSTAR),</p>
+                  <p class="university-name">Charotar University of Science and Technology (CHARUSAT)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                </svg>
+              </div>
+
+              <div class="text">Resume</div>
+            </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="https://i.postimg.cc/fWdBtSpD/bhumi.jpg" alt="Bhumi Patel" tabindex="0"
+              aria-label="image of bhumi" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="skills-quote" data-aos="fade-up">
+          <div class="aesthetic-quote-card">
+            <span class="quote-icon-left">“</span>
+            <p class="aesthetic-quote-text">
+              Turning ideas into reality through <span class="highlight-text">code, creativity, and continuous
+                learning.</span>
+
+            </p>
+            <span class="quote-icon-right">”</span>
+          </div>
+        </div>
+
+        <div class="tech-categories-container">
+          <!-- Category 1: Programming Languages -->
+          <div class="tech-category" data-aos="fade-right">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/clogo.png" alt="C" /></div>
+                <span class="skill-name">C</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/cpplogo.png" alt="C++" /></div>
+                <span class="skill-name">C++</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/java_trans.png" alt="Java" /></div>
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/jslogo.png" alt="JavaScript" /></div>
+                <span class="skill-name">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="tech-category" data-aos="fade-left">
+            <h3 class="category-title">Web Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/htmllogo.png" alt="HTML" /></div>
+                <span class="skill-name">HTML</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/csslogo.png" alt="CSS" /></div>
+                <span class="skill-name">CSS</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/bootstraplogo.png" alt="Bootstrap" /></div>
+                <span class="skill-name">Bootstrap</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/tailwind.png" alt="Tailwind CSS" /></div>
+                <span class="skill-name">Tailwind</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/reactlogo.png" alt="React.js" /></div>
+                <span class="skill-name">React.js</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/typescript.png" alt="TypeScript" /></div>
+                <span class="skill-name">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Category 3: Database & Backend Services -->
+          <div class="tech-category category-with-backdrop" data-aos="fade-right">
+            <div class="category-backdrop">
+              <span class="backdrop-watermark" data-aos="fade-up">CAPABILITIES</span>
+            </div>
+            <h3 class="category-title">Database & Backend Services</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/mongodb_trans.png" alt="MongoDB" /></div>
+                <span class="skill-name">MongoDB</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/firebase_trans.png" alt="Firebase" /></div>
+                <span class="skill-name">Firebase</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Frameworks & Libraries -->
+          <div class="tech-category" data-aos="fade-left">
+            <h3 class="category-title">Frameworks & Libraries</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/nodejs_trans.png" alt="Node.js" /></div>
+                <span class="skill-name">Node.js</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/expressjs.png" alt="Express.js" /></div>
+                <span class="skill-name">Express.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Development & Automation Tools -->
+          <div class="tech-category" data-aos="fade-right">
+            <h3 class="category-title">Development & Automation Tools</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/vs-code-2_trans.png" alt="Visual Studio Code" />
+                </div>
+                <span class="skill-name">VS Code</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/gitlogo.png" alt="Git" /></div>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/githublogo.png" alt="GitHub"
+                    class="needtobeinvert invertapplied" /></div>
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/figmalogo.png" alt="Figma" /></div>
+                <span class="skill-name">Figma</span>
+              </div>
+              <div class="skill-card fade-up">
+                <div class="skill-icon-wrapper"><img src="./src/png/n8n.png" alt="n8n" /></div>
+                <span class="skill-name">n8n</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up">
+            <h3 class="category-title">Areas of Interest</h3>
+            <div class="interest-tags">
+              <span class="interest-tag glow-hover">Full-Stack Development</span>
+              <span class="interest-tag glow-hover">Cloud Platforms</span>
+              <span class="interest-tag glow-hover">DevOps</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Current Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <!-- Project 1: Campus Connect -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box1">
+              <div class="info-div">
+                <article class="ProjectHeading">Campus Connect</article>
+                <p class="ProjectDescription">
+                  CampusConnect is a full-stack college event platform where admins manage events and placement visits,
+                  while students discover, register, and get personalized recommendations. It includes secure JWT
+                  role-based access, a real-time Socket.IO chatbot, and a modern React + Express + MongoDB architecture.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Socket.IO</span>
+                  <span class="tech-tag">JWT Authentication</span>
+
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/BhumiPatel1221/CompusConnect" target="_blank" class="github-redirect"
+                    aria-label="Visit Campus Connect on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://compus-connect-three.vercel.app" target="_blank" class="cta"
+                    aria-label="Visit Campus Connect Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div"
+                onclick="openProjectModal('Campus Connect', 'CampusConnect — A full-stack College Event Management System built with React, Express.js, and MongoDB. Features JWT auth, role-based access, event &amp; registration management, company placement visits, AI-powered recommendations, real-time chatbot via Socket.IO, and an admin dashboard.', 'https://github.com/BhumiPatel1221/CompusConnect', 'https://compus-connect-three.vercel.app', 'src/png/campus-connect-preview.png', ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO','JWT'])">
+                <img src="src/png/campus-connect-preview.png" alt="Campus Connect website preview image"
+                  style="cursor: pointer;" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <!-- Project 2: Resume Analyzer -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <article class="ProjectHeading">AI Resume Analyzer</article>
+                <p class="ProjectDescription">
+                  AI Resume Analyzer is a smart web application that analyzes resumes and compares them with job
+                  descriptions using Artificial Intelligence for intelligent candidate screening.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">NLP / ML</span>
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/BhumiPatel1221/ResumeIQ" target="_blank" class="github-redirect"
+                    aria-label="Visit Resume Analyzer on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="#" target="_blank" class="cta" aria-label="Visit Resume Analyzer Live"
+                    style="opacity: 0.5; pointer-events: none;">
+                    <span>Waitlisted</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div"
+                onclick="openProjectModal('AI Resume Analyzer', 'AI Resume Analyzer is a smart web application that analyzes resumes and compares them with job descriptions using Artificial Intelligence and get a semantic match score, matched/missing skills, actionable suggestions, and saved analysis history. The system evaluates resumes based on skills, keywords, and experience, helping job seekers improve their resumes and helping recruiters quickly identify suitable candidates.', 'https://github.com/BhumiPatel1221/ResumeIQ', '#', 'src/png/resume-analyzer-preview.png', ['React', 'TypeScript', 'HTML', 'CSS', 'Python', 'NLP', 'Machine Learning'])">
+                <img src="src/png/resume-analyzer-preview.png" alt="Resume Analyzer website preview image"
+                  style="cursor: pointer;" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <!-- Project 3: HealthLocker -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box3">
+              <div class="info-div">
+                <article class="ProjectHeading">HealthLocker</article>
+                <p class="ProjectDescription">
+                  HealthLocker is a secure health-record system where patients control access to their medical data,
+                  doctors get time-limited permissions, and admins monitor everything through audit logs.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Amazon S3</span>
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/BhumiPatel1221/HealthLocker" target="_blank" class="github-redirect"
+                    aria-label="Visit HealthLocker on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://health-locker.vercel.app" target="_blank" class="cta"
+                    aria-label="Visit HealthLocker Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div"
+                onclick="openProjectModal('HealthLocker', 'HealthLocker is a secure digital health record platform where patients can store and manage medical visits and files, grant or revoke time-limited access to doctors, and track every action through audit logs, while doctors can only view or update records when permission is valid and admins handle doctor verification, user control, and system monitoring; it is built with a Node.js/Express backend, MongoDB, Firebase-based authentication with JWT sessions, and private AWS S3 storage with signed URLs, with strong protections like role-based access control, rate limiting, and security headers.', 'https://github.com/BhumiPatel1221/HealthLocker', 'https://health-locker.vercel.app', 'src/png/healthlocker-preview.png', ['React.js', 'TypeScript', 'Firebase Base', 'Amazon S3', 'HTML', 'CSS','Multer','Helmet'])">
+                <img src="src/png/healthlocker-preview.png" alt="HealthLocker website preview image"
+                  style="cursor: pointer;" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <!-- Project 4: CollabSpace -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box4">
+              <div class="info-div">
+                <article class="ProjectHeading">CollabSpace</article>
+                <p class="ProjectDescription">
+                  CollabSpace is a collaborative workspace platform that allows teams to communicate, manage tasks, and
+                  work together efficiently for improved structured team productivity.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/BhumiPatel1221/CollabSpace" target="_blank" class="github-redirect"
+                    aria-label="Visit CollabSpace on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://collab-space-nine.vercel.app" target="_blank" class="cta"
+                    aria-label="Visit CollabSpace Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div"
+                onclick="openProjectModal('CollabSpace', 'CollabSpace — A real-time collaborative document editor built with React, Firebase, and TypeScript. Features Google &amp; email authentication, live multi-user editing with presence tracking, document sharing, version history, and a modern glassmorphic UI with dark mode support.', 'https://github.com/BhumiPatel1221/CollabSpace', 'https://collab-space-nine.vercel.app', 'src/png/collabspace-preview.png', ['React.js', 'TypeScript', 'HTML', 'CSS', 'MongoDB', 'Firebase'])">
+                <img src="src/png/collabspace-preview.png" alt="CollabSpace website preview image"
+                  style="cursor: pointer;" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UI Update: Cinematic Certification Showcase -->
+    <section class="certificates-showcase-section" id="certificates">
+      <div class="certificates-showcase-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Certifications heading">
+            &#60;/Certifications&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+      </div>
+
+      <div class="holographic-showcase-container">
+        <!-- Cert 1 -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="100"
+          onclick="openCertModal('https://i.postimg.cc/43WytGnf/AWT-coursera.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/43WytGnf/AWT-coursera.png" alt="Web Dev Certificate">
+            <div class="frame-content">
+              <span class="platform-chip">Coursera</span>
+              <h3>Adv Web Dev (React)</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="300"
+          onclick="openCertModal('https://i.postimg.cc/kMBwhFrx/Docker.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/kMBwhFrx/Docker.png" alt="Docker Certificate">
+            <div class="frame-content">
+              <span class="platform-chip">Coursera</span>
+              <h3>Docker Mastery</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="500"
+          onclick="openCertModal('https://i.postimg.cc/9QtBqLT5/firebase-course-certificate.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/9QtBqLT5/firebase-course-certificate.png" alt="Firebase Certificate">
+            <div class="frame-content">
+              <span class="platform-chip">Coursera</span>
+              <h3>Firebase Tour</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="700"
+          onclick="openCertModal('https://i.postimg.cc/HL646jBh/Full-Stack-By-Skill-Up.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/HL646jBh/Full-Stack-By-Skill-Up.png" alt="Skillup Certificate">
+            <div class="frame-content">
+              <span class="platform-chip tint-skillup">Skillup</span>
+              <h3>Full Stack Dev</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 5: UI-UX -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="900"
+          onclick="openCertModal('https://i.postimg.cc/d3pQ9M7x/ui-ux.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/d3pQ9M7x/ui-ux.png" alt="UI-UX Certificate">
+            <div class="frame-content">
+              <span class="platform-chip tint-greatlearning">Great Learning</span>
+              <h3>UI-UX Design</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 6: Java -->
+        <div class="holographic-frame-wrapper" data-aos="fade-right" data-aos-delay="1100"
+          onclick="openCertModal('https://i.postimg.cc/Hj1DxT8V/java-course.png')">
+          <div class="holographic-frame">
+            <img src="https://i.postimg.cc/Hj1DxT8V/java-course.png" alt="Java Certificate">
+            <div class="frame-content">
+              <span class="platform-chip tint-infosys">Infosys</span>
+              <h3>Java Programming</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section Starts -->
+    <section class="experience-showcase-section" id="experience">
+      <div class="experience-container">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Experience heading">
+            &#60;/Experience&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="career-timeline">
+          <!-- Central Pulse Line -->
+          <div class="timeline-rail">
+            <div class="rail-pulse"></div>
+          </div>
+
+          <!-- Experience Item 1 -->
+          <div class="timeline-node-wrapper" data-aos="fade-left">
+            <div class="timeline-dot">
+              <div class="dot-inner"></div>
+            </div>
+
+            <div class="experience-content-direct">
+              <div class="exp-top">
+                <div class="exp-identity">
+                  <h3 class="company-name-large">AUGMETIC INFINTE LLP</h3>
+                  <h4 class="role-title-sub">Intern</h4>
+                </div>
+                <div class="exp-date-badge">
+                  <span>June '25 — July '25</span>
+                </div>
+              </div>
+
+              <div class="exp-details">
+                <div class="detail-item">
+                  <p>Engineered responsive <span class="tech-highlight">WordPress</span> & <span
+                      class="tech-highlight">Shopify</span> ecosystems, optimizing product architecture and theme
+                    logic.</p>
+                </div>
+                <div class="detail-item">
+                  <p>Orchestrated precision UI customizations and critical bug resolutions to enhance user retention.
+                  </p>
+                </div>
+                <div class="detail-item">
+                  <p>Synergized with cross-functional teams to deploy high-performance, user-centric web platforms.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exp-actions">
+                <a href="https://augmetic.xyz/" target="_blank" class="glass-btn">
+                  <span>Visit Site</span>
+                </a>
+                <a href="https://maps.app.goo.gl/PwY3r12UFz47fHGE8" target="_blank" class="glass-btn">
+                  <span>Location</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section-container" id="contact">
+      <!-- <div class="contact-creative-backdrop">
+        <span class="backdrop-text" data-aos="fade-up">CONNECT</span>
+      </div> -->
+
+      <div class="contact-section" data-aos="fade-up">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Contact heading">
+            &#60;/Contact&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Form -->
+          <div class="contact-left">
+            <form class="contact-form" id="contact-form" data-aos="fade-up">
+              <div class="input-row">
+                <input type="text" name="sender_name" id="nameInput" required aria-label="Your Name" class="form-input"
+                  placeholder="Name" />
+                <input type="email" name="sender_email" id="emailInput" required aria-label="Your Email"
+                  class="form-input" placeholder="Email" />
+              </div>
+              <input type="text" name="contact_subject" id="subjectInput" required aria-label="Subject"
+                class="form-input" placeholder="Subject" />
+              <textarea name="contact_message" id="messageInput" required aria-label="Your Message" rows="5"
+                class="form-input" placeholder="Message"></textarea>
+
+              <button type="submit" class="premium-submit-btn" id="submit-btn" style="cursor: pointer;">
+                <span>Send Message</span>
+                <div class="btn-glow"></div>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Direct Minimal Contact Details -->
+          <div class="contact-right" data-aos="fade-left">
+            <p class="minimal-quote" tabindex="0" aria-label="Building, Learning, and Growing, my quote">
+              "Building, Learning, and Growing."
+            </p>
+
+            <p class="getintouch-minimal">GetinTouch();</p>
+
+            <!-- <a href="mailto:bhumi12902005@gmail.com" class="direct-email-text">
+              bhumi12902005@gmail.com
+            </a> -->
+
+            <div class="minimal-contact-info">
+              <a href="tel:+918200049935" class="contact-detail">
+                <span class="detail-label">TEL:</span> +91 8200049925
+              </a>
+              <a href="mailto:bhumi129@gmail.com" class="contact-detail">
+                <span class="detail-label">MAIL:</span> bhumi1292005@gmail.com
+              </a>
+            </div>
+
+            <div class="minimal-social-links">
+              <a href="https://github.com/BhumiPatel1221" target="_blank" aria-label="My github"
+                class="social-icon-link">
+                <svg viewBox="0 0 24 24" class="SocialHandle">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com/in/bhumi-patel-6b21ab283" target="_blank" aria-label="My LinkedIn"
+                class="social-icon-link">
+                <svg viewBox="0 0 24 24" class="SocialHandle">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+
+              <!-- <a href="mailto:bhumi12902005@gmail.com" aria-label="My Email" class="social-icon-link">
+                <svg viewBox="0 0 24 24" class="SocialHandle">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Building, Learning, and Growing, my quote">
+            "Building, Learning, and Growing."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://github.com/BhumiPatel1221" target="_blank" aria-label="My github">
+              <svg viewBox="0 0 496 512" class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg>
+            </a>
+
+            <a href="https://linkedin.com/in/bhumi-patel-6b21ab283" target="_blank" aria-label="My LinkedIn">
+              <svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg>
+            </a>
+
+            <a href="mailto:bhumi1292005@gmail.com" target="_blank" aria-label="My Gmail">
+              <svg id="GmailLogo" viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-bhumi.png" alt="animation-head" class="footer-avatar-img"
+            id="footer-wala-avatar" />
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <article>
+            Designed & Built by Bhumi Patel
+            &#169; 2026
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("-ICxH8ovq7G8kIxar");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const btn = document.getElementById('submit-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span>Sending...</span><div class="btn-glow"></div>';
+      btn.style.opacity = '0.7';
+      btn.disabled = true;
+
+      emailjs.sendForm('service_9zvja4q', 'template_ir3amg5', this)
+        .then(function () {
+          alert('Message Sent Successfully!');
+          btn.innerHTML = '<span>Message Sent!</span><div class="btn-glow"></div>';
+          btn.style.background = '#00ff88';
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = '#11111b';
+            btn.style.opacity = '1';
+            btn.disabled = false;
+            document.getElementById('contact-form').reset();
+          }, 3000);
+        }, function (error) {
+          alert('FAILED to send message. Please try again later.');
+          console.log('FAILED...', error);
+          btn.innerHTML = originalText;
+          btn.style.opacity = '1';
+          btn.disabled = false;
+        });
+    });
+  </script>
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/BHUMIPATEL_RESUME.pdf";
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const scrollBar = document.getElementById("scroll-progress-bar");
+    const links = document.querySelectorAll("a, label, button, .live-status-badge");
+
+    // Scroll Progress Logic
+    window.addEventListener("scroll", () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (scrollBar) scrollBar.style.width = scrolled + "%";
+    });
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+    });
+
+    // Enhanced Interactivity & Magnetic Feel
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        cursorInner.classList.add("hover");
+        cursorOuter.classList.add("hover");
+      });
+      link.addEventListener("mouseleave", () => {
+        cursorInner.classList.remove("hover");
+        cursorOuter.classList.remove("hover");
+      });
+    });
+  </script>
+
+  <!-- ========== TECH ORBIT LOADER SCRIPT ========== -->
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('typing-loader');
+      const welcomeTextContainer = document.getElementById('welcome-text');
+
+      // Multi-line Unique Presentation
+      const lines = [
+        { text: "( INITIALIZING ACCESS )", class: "reveal-prefix" },
+        { text: "BHUMI'S", class: "reveal-name" },
+        { text: "PORTFOLIO", class: "reveal-title" }
+      ];
+
+      lines.forEach((lineData, lineIdx) => {
+        const lineDiv = document.createElement('div');
+        lineDiv.className = `reveal-line ${lineData.class}`;
+
+        lineData.text.split('').forEach((char, charIdx) => {
+          const span = document.createElement('span');
+          span.textContent = char === ' ' ? '\u00A0' : char;
+          // Staggered delay: line delay + char delay
+          span.style.animationDelay = `${(lineIdx * 0.8) + (charIdx * 0.04)}s`;
+          lineDiv.appendChild(span);
+        });
+
+        welcomeTextContainer.appendChild(lineDiv);
+      });
+
+      // Overall timing: loader shows for 3.5 seconds then fades out (longer for multi-line)
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        loader.style.transition = 'opacity 1s cubic-bezier(0.4, 0, 0.2, 1)';
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 1000);
+      }, 3500);
+    });
+  </script>
+
+</body>
+
+</html>

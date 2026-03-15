@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhumipatel1221.github.io/Bhumi_portfolio/sitemap.xml
