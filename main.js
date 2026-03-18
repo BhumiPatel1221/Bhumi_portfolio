@@ -7,44 +7,7 @@ window.addEventListener("load", function () {
 
 function settingtoggle() {
   document.getElementById("setting-container").classList.toggle('settingactivate');
-  document.getElementById("visualmodetogglebuttoncontainer").classList.toggle('visualmodeshow');
 }
-
-function visualmode() {
-  document.body.classList.toggle('light-mode');
-  if (document.body.classList.contains('light-mode')) {
-    localStorage.setItem('theme', 'light');
-  } else {
-    localStorage.setItem('theme', 'dark');
-  }
-  var elements = document.querySelectorAll('.needtobeinvert');
-  elements.forEach(function (element) {
-    element.classList.toggle('invertapplied');
-  });
-}
-
-// Add event listener to sync switch state with current theme
-document.addEventListener('DOMContentLoaded', () => {
-    const themeSwitch = document.getElementById('switchforvisualmode');
-    if (themeSwitch) {
-        themeSwitch.checked = document.body.classList.contains('light-mode');
-    }
-});
-
-// Listen for system theme changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) {
-        if (e.matches) {
-            document.body.classList.remove('light-mode');
-        } else {
-            document.body.classList.add('light-mode');
-        }
-        const themeSwitch = document.getElementById('switchforvisualmode');
-        if (themeSwitch) {
-            themeSwitch.checked = document.body.classList.contains('light-mode');
-        }
-    }
-});
 
 function hamburgerMenu() {
   document.body.classList.toggle("stopscrolling");

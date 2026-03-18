@@ -31,13 +31,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
-<body class="body">
-  <script>
-    // Initialize theme
-    if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.body.classList.add('light-mode');
-    }
-  </script>
+<body class="body light-mode">
   <!-- ========== QUANTUM NEURAL NEXUS LOADER ========== -->
   <div id="typing-loader">
     <div class="nexus-container">
@@ -306,21 +300,6 @@
               <p class="letsTalkBtn-text">Let's Talk!</p>
               <span class="letsTalkBtn-BG"></span>
             </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert invertapplied" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" checked />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
-            </div>
-
-
-          </div>
-          <!-- setting div ends -->
         </div>
         <!-- contact-btn-div -->
       </div>
@@ -949,16 +928,15 @@
 
       </div>
     </section>
-  <!-- Technical Infinite Marquee -->
-  <div class="tech-marquee-container">
-    <div class="tech-marquee-content">
-      <span>INNOVATION</span><span>SCALABILITY</span><span>ARCHITECTURE</span><span>AUTOMATION</span><span>FULL-STACK</span><span>OPTIMIZATION</span><span>REAL-TIME</span><span>DEVELOPMENT</span>
-      <span>INNOVATION</span><span>SCALABILITY</span><span>ARCHITECTURE</span><span>AUTOMATION</span><span>FULL-STACK</span><span>OPTIMIZATION</span><span>REAL-TIME</span><span>DEVELOPMENT</span>
+    <!-- Technical Infinite Marquee -->
+    <div class="tech-marquee-container">
+      <div class="tech-marquee-content">
+        <span>INNOVATION</span><span>SCALABILITY</span><span>ARCHITECTURE</span><span>AUTOMATION</span><span>FULL-STACK</span><span>OPTIMIZATION</span><span>REAL-TIME</span><span>DEVELOPMENT</span>
+        <span>INNOVATION</span><span>SCALABILITY</span><span>ARCHITECTURE</span><span>AUTOMATION</span><span>FULL-STACK</span><span>OPTIMIZATION</span><span>REAL-TIME</span><span>DEVELOPMENT</span>
+      </div>
     </div>
-  </div>
 
-  <!-- main ends here -->
-
+    <!-- main ends here -->
 
 
 
@@ -972,138 +950,139 @@
 
 
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("-ICxH8ovq7G8kIxar");
-    })();
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("-ICxH8ovq7G8kIxar");
+      })();
 
-      const btn = document.getElementById('submit-btn');
-      const originalText = btn.innerHTML;
-      btn.innerHTML = '<span>Sending...</span><div class="btn-glow"></div>';
-      btn.style.opacity = '0.7';
-      btn.disabled = true;
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-      emailjs.sendForm('service_9zvja4q', 'template_ir3amg5', this)
-        .then(function () {
-          alert('Message Sent Successfully!');
-          btn.innerHTML = '<span>Message Sent!</span><div class="btn-glow"></div>';
-          btn.style.background = '#00ff88';
-          setTimeout(() => {
+        const btn = document.getElementById('submit-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span>Sending...</span><div class="btn-glow"></div>';
+        btn.style.opacity = '0.7';
+        btn.disabled = true;
+
+        emailjs.sendForm('service_9zvja4q', 'template_ir3amg5', this)
+          .then(function () {
+            alert('Message Sent Successfully!');
+            btn.innerHTML = '<span>Message Sent!</span><div class="btn-glow"></div>';
+            btn.style.background = '#00ff88';
+            setTimeout(() => {
+              btn.innerHTML = originalText;
+              btn.style.background = '#11111b';
+              btn.style.opacity = '1';
+              btn.disabled = false;
+              document.getElementById('contact-form').reset();
+            }, 3000);
+          }, function (error) {
+            alert('FAILED to send message. Please try again later.');
+            console.log('FAILED...', error);
             btn.innerHTML = originalText;
-            btn.style.background = '#11111b';
             btn.style.opacity = '1';
             btn.disabled = false;
-            document.getElementById('contact-form').reset();
-          }, 3000);
-        }, function (error) {
-          alert('FAILED to send message. Please try again later.');
-          console.log('FAILED...', error);
-          btn.innerHTML = originalText;
-          btn.style.opacity = '1';
-          btn.disabled = false;
+          });
+      });
+    </script>
+
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function openURL() {
+        var url = "src/pdf/Bhumipatel'26_resume.pdf";
+        window.open(url, "_blank");
+      }
+    </script>
+
+    <script>
+      const cursorInner = document.getElementById("cursor-inner");
+      const cursorOuter = document.getElementById("cursor-outer");
+      const scrollBar = document.getElementById("scroll-progress-bar");
+      const links = document.querySelectorAll("a, label, button, .live-status-badge");
+
+      // Scroll Progress Logic
+      window.addEventListener("scroll", () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        if (scrollBar) scrollBar.style.width = scrolled + "%";
+      });
+
+      document.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorInner.style.left = `${posX}px`;
+        cursorInner.style.top = `${posY}px`;
+
+        cursorOuter.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" }
+        );
+      });
+
+      // Enhanced Interactivity & Magnetic Feel
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
         });
-    });
-  </script>
-
-  <script src="main.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openURL() {
-      var url = "src/pdf/bhumipatel'26_portfolio.pdf";
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const scrollBar = document.getElementById("scroll-progress-bar");
-    const links = document.querySelectorAll("a, label, button, .live-status-badge");
-
-    // Scroll Progress Logic
-    window.addEventListener("scroll", () => {
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      if (scrollBar) scrollBar.style.width = scrolled + "%";
-    });
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-    });
-
-    // Enhanced Interactivity & Magnetic Feel
-    links.forEach((link) => {
-      link.addEventListener("mouseenter", () => {
-        cursorInner.classList.add("hover");
-        cursorOuter.classList.add("hover");
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
       });
-      link.addEventListener("mouseleave", () => {
-        cursorInner.classList.remove("hover");
-        cursorOuter.classList.remove("hover");
-      });
-    });
-  </script>
+    </script>
 
-  <!-- ========== TECH ORBIT LOADER SCRIPT ========== -->
-  <script>
-    window.addEventListener('load', () => {
-      const loader = document.getElementById('typing-loader');
-      const welcomeTextContainer = document.getElementById('welcome-text');
+    <!-- ========== TECH ORBIT LOADER SCRIPT ========== -->
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('typing-loader');
+        const welcomeTextContainer = document.getElementById('welcome-text');
 
-      // Multi-line Unique Presentation
-      const lines = [
-        { text: "( INITIALIZING ACCESS )", class: "reveal-prefix" },
-        { text: "BHUMI'S", class: "reveal-name" },
-        { text: "PORTFOLIO", class: "reveal-title" }
-      ];
+        // Multi-line Unique Presentation
+        const lines = [
+          { text: "( INITIALIZING ACCESS )", class: "reveal-prefix" },
+          { text: "BHUMI'S", class: "reveal-name" },
+          { text: "PORTFOLIO", class: "reveal-title" }
+        ];
 
-      lines.forEach((lineData, lineIdx) => {
-        const lineDiv = document.createElement('div');
-        lineDiv.className = `reveal-line ${lineData.class}`;
+        lines.forEach((lineData, lineIdx) => {
+          const lineDiv = document.createElement('div');
+          lineDiv.className = `reveal-line ${lineData.class}`;
 
-        lineData.text.split('').forEach((char, charIdx) => {
-          const span = document.createElement('span');
-          span.textContent = char === ' ' ? '\u00A0' : char;
-          // Staggered delay: line delay + char delay
-          span.style.animationDelay = `${(lineIdx * 0.8) + (charIdx * 0.04)}s`;
-          lineDiv.appendChild(span);
+          lineData.text.split('').forEach((char, charIdx) => {
+            const span = document.createElement('span');
+            span.textContent = char === ' ' ? '\u00A0' : char;
+            // Staggered delay: line delay + char delay
+            span.style.animationDelay = `${(lineIdx * 0.8) + (charIdx * 0.04)}s`;
+            lineDiv.appendChild(span);
+          });
+
+          welcomeTextContainer.appendChild(lineDiv);
         });
 
-        welcomeTextContainer.appendChild(lineDiv);
-      });
-
-      // Overall timing: loader shows for 3.5 seconds then fades out (longer for multi-line)
-      setTimeout(() => {
-        loader.style.opacity = '0';
-        loader.style.transition = 'opacity 1s cubic-bezier(0.4, 0, 0.2, 1)';
+        // Overall timing: loader shows for 3.5 seconds then fades out (longer for multi-line)
         setTimeout(() => {
-          loader.style.display = 'none';
-        }, 1000);
-      }, 3500);
-    });
-  </script>
+          loader.style.opacity = '0';
+          loader.style.transition = 'opacity 1s cubic-bezier(0.4, 0, 0.2, 1)';
+          setTimeout(() => {
+            loader.style.display = 'none';
+          }, 1000);
+        }, 3500);
+      });
+    </script>
 
 </body>
 
